@@ -6,16 +6,16 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
+    Calculator calculator=new Calculator();
 
     @Test
     public void shouldReturnSumOfTwoNumbers() {
-       // arrangement
-        Calculator calculator=new Calculator();
-
-        //action
         int actualSum = calculator.add(1, 2);
 
-        //assertion
         assertEquals(3, actualSum);
+    }
+    @Test public void shouldReturnSubtractionOfTwoNumbers(){
+        int actualSubtraction=calculator.subtraction(3,1);
+        assertEquals(2,actualSubtraction);
     }
 }
