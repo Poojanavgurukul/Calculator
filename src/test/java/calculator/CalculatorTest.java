@@ -28,7 +28,7 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnMultiplicationOfTwoNumbers() {
-        int actualMultiplication = calculator.multiplication(3, 2);
+        int actualMultiplication = calculator.multiply(3, 2).getResult();
         assertEquals(6, actualMultiplication);
     }
 
@@ -38,12 +38,29 @@ public class CalculatorTest {
         assertEquals(2, actualDivision);
     }
 
-    @Test public void shouldReturnSquareRoot(){
-        int actualSquareRoot=calculator.squareRoot(4);
-        assertEquals(2,actualSquareRoot);
+    @Test
+    public void shouldReturnSquareRoot() {
+        int actualSquareRoot = calculator.squareRoot(4);
+        assertEquals(2, actualSquareRoot);
     }
-    @Test public void shouldGiveTheResultOfAddAndSubtractTogether(){
-        int actualResult=calculator.add(2,3).subtract(2).getResult();
-        assertEquals(3,actualResult);
+
+    @Test
+    public void shouldGiveTheResultOfAddAndSubtractTogether() {
+        int actualResult = calculator.add(2, 3).subtract(2).getResult();
+        assertEquals(3, actualResult);
+    }
+
+   /* @Test
+    public void solveit() {
+//        ( 10 + 3) + ( 19 - 4 ) / 7 = 4
+//        (10 / 20) / (10 - 10) = Error
+        int actualResult = calculator.add(2, 3).subtract(2).getResult();
+        assertEquals(3, actualResult);
+    }*/
+
+    @Test
+    public void shouldGiveTheResultOfMultipleOperationTogether() {
+        int actualResult = calculator.add(2, 3).subtract(2).multiply(3).getResult();
+        assertEquals(9, actualResult);
     }
 }
