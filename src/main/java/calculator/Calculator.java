@@ -18,6 +18,6 @@ public class Calculator {
     }
 
     public int squareRoot(int number) {
-        return 0;
+        return (int)Math.sqrt(number);
     }
 }
