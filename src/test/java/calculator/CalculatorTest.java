@@ -2,8 +2,6 @@ package calculator;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
@@ -18,14 +16,14 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnSumOfThreeNumbers() {
-        //int actualSum = calculator.add(1, 2).add(3).getResult();
+        //int actualSum = calculator.add(1, 2).add(3).s.getResult();
         int actualSum = calculator.add(1, 2);
         assertEquals(6, actualSum);
     }
 
     @Test
     public void shouldReturnSubtractionOfTwoNumbers() {
-        int actualSubtraction = calculator.subtraction(3, 1);
+        int actualSubtraction = calculator.subtract(3, 1);
         assertEquals(2, actualSubtraction);
     }
 
