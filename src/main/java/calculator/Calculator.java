@@ -10,6 +10,6 @@ public class Calculator {
     }
 
     public int multiplication(int number1, int number2) {
-        return 1;
+        return number1*number2;
     }
 }
