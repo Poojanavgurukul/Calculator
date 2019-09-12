@@ -26,4 +26,8 @@ public class CalculatorTest {
         int actualMultiplication=calculator.multiplication(3,2);
         assertEquals(6,actualMultiplication);
     }
+    @Test public void shouldReturnDivisionOfTwoNumbers(){
+        int actualDivision=calculator.divide(4,2);
+        assertEquals(2,actualDivision);
+    }
 }
