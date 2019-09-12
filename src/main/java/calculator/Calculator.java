@@ -1,23 +1,35 @@
 package calculator;
 
 public class Calculator {
-    public int add(int number1, int number2) {
-        return number1 + number2;
+    private int finalResult = 0;
+
+    public Calculator add(int number1, int number2) {
+        this.finalResult = number1 + number2;
+        return this;
     }
 
     public int subtract(int number1, int number2) {
-        return number1-number2;
+        return number1 - number2;
     }
 
     public int multiplication(int number1, int number2) {
-        return number1*number2;
+        return number1 * number2;
     }
 
     public int divide(int number1, int number2) {
-        return number1/number2;
+        return number1 / number2;
     }
 
     public int squareRoot(int number) {
-        return (int)Math.sqrt(number);
+        return (int) Math.sqrt(number);
+    }
+
+    public Calculator add(int number) {
+        this.finalResult = finalResult + number;
+        return this;
+    }
+
+    public int getResult() {
+        return this.finalResult;
     }
 }

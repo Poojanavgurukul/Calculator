@@ -9,15 +9,14 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnSumOfTwoNumbers() {
-        int actualSum = calculator.add(1, 2);
+        int actualSum = calculator.add(1, 2).getResult();
 
         assertEquals(3, actualSum);
     }
 
     @Test
     public void shouldReturnSumOfThreeNumbers() {
-        //int actualSum = calculator.add(1, 2).add(3).s.getResult();
-        int actualSum = calculator.add(1, 2);
+        int actualSum = calculator.add(1, 2).add(3).getResult();
         assertEquals(6, actualSum);
     }
 
