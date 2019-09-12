@@ -28,12 +28,19 @@ public class CalculatorTest {
     }
 
     @Test
-    public void shouldReturnMultiplicationOfTwoNumbers(){
-        int actualMultiplication=calculator.multiplication(3,2);
-        assertEquals(6,actualMultiplication);
+    public void shouldReturnMultiplicationOfTwoNumbers() {
+        int actualMultiplication = calculator.multiplication(3, 2);
+        assertEquals(6, actualMultiplication);
     }
-    @Test public void shouldReturnDivisionOfTwoNumbers(){
-        int actualDivision=calculator.divide(4,2);
-        assertEquals(2,actualDivision);
+
+    @Test
+    public void shouldReturnDivisionOfTwoNumbers() {
+        int actualDivision = calculator.divide(4, 2);
+        assertEquals(2, actualDivision);
+    }
+
+    @Test public void shouldReturnSquareRoot(){
+        int actualSquareRoot=calculator.squareRoot(4);
+        assertEquals(2,actualSquareRoot);
     }
 }
