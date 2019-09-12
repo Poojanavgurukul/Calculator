@@ -22,7 +22,7 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnSubtractionOfTwoNumbers() {
-        int actualSubtraction = calculator.subtract(3, 1);
+        int actualSubtraction = calculator.subtract(3, 1).getResult();
         assertEquals(2, actualSubtraction);
     }
 
@@ -41,5 +41,9 @@ public class CalculatorTest {
     @Test public void shouldReturnSquareRoot(){
         int actualSquareRoot=calculator.squareRoot(4);
         assertEquals(2,actualSquareRoot);
+    }
+    @Test public void shouldGiveTheResultOfAddAndSubtractTogether(){
+        int actualResult=calculator.add(2,3).subtract(2).getResult();
+        assertEquals(3,actualResult);
     }
 }

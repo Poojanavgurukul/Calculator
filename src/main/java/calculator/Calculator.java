@@ -8,8 +8,9 @@ public class Calculator {
         return this;
     }
 
-    public int subtract(int number1, int number2) {
-        return number1 - number2;
+    public Calculator subtract(int number1, int number2) {
+        this.finalResult=number1 - number2;
+        return this;
     }
 
     public int multiplication(int number1, int number2) {
@@ -29,6 +30,10 @@ public class Calculator {
         return this;
     }
 
+    public Calculator subtract(int number){
+        this.finalResult=finalResult-number;
+        return this;
+    }
     public int getResult() {
         return this.finalResult;
     }
