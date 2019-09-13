@@ -51,7 +51,7 @@ public class CalculatorTest {
     }
 
    /* @Test
-    public void solveit() {
+    public void solveIt() {
 //        ( 10 + 3) + ( 19 - 4 ) / 7 = 4
 //        (10 / 20) / (10 - 10) = Error
         int actualResult = calculator.add(2, 3).subtract(2).getResult();
@@ -62,5 +62,9 @@ public class CalculatorTest {
     public void shouldGiveTheResultOfMultipleOperationTogether() {
         int actualResult = calculator.add(2, 3).subtract(2).multiply(3).getResult();
         assertEquals(9, actualResult);
+    }
+    @Test public void shouldReturnTheAnswerOfEquation(){
+        int actualResult=calculator.solveEquation("(10+3)+(19-4)/7");
+        assertEquals(4,actualResult);
     }
 }

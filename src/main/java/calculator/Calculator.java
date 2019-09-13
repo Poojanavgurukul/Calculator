@@ -44,4 +44,8 @@ public class Calculator {
     public int getResult() {
         return this.finalResult;
     }
+
+    public int solveEquation(String input) {
+        return 0;
+    }
 }
