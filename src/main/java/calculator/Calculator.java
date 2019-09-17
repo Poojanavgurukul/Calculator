@@ -5,37 +5,37 @@ import java.util.Collections;
 import java.util.List;
 
 public class Calculator {
-    private int finalResult = 0;
+    private double finalResult = 0;
 
-    public Calculator add(int number1, int number2) {
+    public Calculator add(double number1, double number2) {
         this.finalResult = number1 + number2;
         return this;
     }
 
-    public Calculator subtract(int number1, int number2) {
+    public Calculator subtract(double number1, double number2) {
         this.finalResult = number1 - number2;
         return this;
     }
 
-    public Calculator multiply(int number1, int number2) {
+    public Calculator multiply(double number1, double number2) {
         this.finalResult = number1 * number2;
         return this;
     }
 
-    public double divide(int number1, int number2) {
+    public double divide(double number1, double number2) {
         return number1 / number2;
     }
 
-    public double squareRoot(int number) {
+    public double squareRoot(double number) {
         return Math.sqrt(number);
     }
 
-    public Calculator add(int number) {
+    public Calculator add(double number) {
         this.finalResult = finalResult + number;
         return this;
     }
 
-    public Calculator subtract(int number) {
+    public Calculator subtract(double number) {
         this.finalResult = finalResult - number;
         return this;
     }
@@ -45,7 +45,7 @@ public class Calculator {
         return this;
     }
 
-    public int getResult() {
+    public double getResult() {
         return this.finalResult;
     }
 

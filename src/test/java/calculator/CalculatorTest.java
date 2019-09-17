@@ -9,27 +9,27 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnSumOfTwoNumbers() {
-        int actualSum = calculator.add(1, 2).getResult();
+        double actualSum = calculator.add(1, 2).getResult();
 
-        assertEquals(3, actualSum);
+        assertEquals(3, actualSum,1);
     }
 
     @Test
     public void shouldReturnSumOfThreeNumbers() {
-        int actualSum = calculator.add(1, 2).add(3).getResult();
-        assertEquals(6, actualSum);
+        double actualSum = calculator.add(1, 2).add(3).getResult();
+        assertEquals(6, actualSum,1);
     }
 
     @Test
     public void shouldReturnSubtractionOfTwoNumbers() {
-        int actualSubtraction = calculator.subtract(3, 1).getResult();
-        assertEquals(2, actualSubtraction);
+        double actualSubtraction = calculator.subtract(3, 1).getResult();
+        assertEquals(2, actualSubtraction,1);
     }
 
     @Test
     public void shouldReturnMultiplicationOfTwoNumbers() {
-        int actualMultiplication = calculator.multiply(3, 2).getResult();
-        assertEquals(6, actualMultiplication);
+        double actualMultiplication = calculator.multiply(3, 2).getResult();
+        assertEquals(6, actualMultiplication,1);
     }
 
     @Test
@@ -46,14 +46,14 @@ public class CalculatorTest {
 
     @Test
     public void shouldGiveTheResultOfAddAndSubtractTogether() {
-        int actualResult = calculator.add(2, 3).subtract(2).getResult();
-        assertEquals(3, actualResult);
+        double actualResult = calculator.add(2, 3).subtract(2).getResult();
+        assertEquals(3, actualResult,1);
     }
 
     @Test
     public void shouldGiveTheResultOfMultipleOperationTogether() {
-        int actualResult = calculator.add(2, 3).subtract(2).multiply(3).getResult();
-        assertEquals(9, actualResult);
+        double actualResult = calculator.add(2, 3).subtract(2).multiply(3).getResult();
+        assertEquals(9, actualResult,1);
     }
 
     @Test
