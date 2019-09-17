@@ -34,8 +34,8 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnDivisionOfTwoNumbers() {
-        int actualDivision = calculator.divide(4, 2);
-        assertEquals(2, actualDivision);
+        double actualDivision = calculator.divide(4, 2);
+        assertEquals(2, actualDivision,1);
     }
 
     @Test

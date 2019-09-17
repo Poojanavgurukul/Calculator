@@ -22,7 +22,7 @@ public class Calculator {
         return this;
     }
 
-    public int divide(int number1, int number2) {
+    public double divide(int number1, int number2) {
         return number1 / number2;
     }
 
