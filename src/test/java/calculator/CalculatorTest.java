@@ -40,8 +40,8 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnSquareRoot() {
-        int actualSquareRoot = calculator.squareRoot(4);
-        assertEquals(2, actualSquareRoot);
+        double actualSquareRoot = calculator.squareRoot(4);
+        assertEquals(2, actualSquareRoot,1);
     }
 
     @Test

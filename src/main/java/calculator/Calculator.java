@@ -26,8 +26,8 @@ public class Calculator {
         return number1 / number2;
     }
 
-    public int squareRoot(int number) {
-        return (int) Math.sqrt(number);
+    public double squareRoot(int number) {
+        return Math.sqrt(number);
     }
 
     public Calculator add(int number) {
@@ -74,10 +74,10 @@ public class Calculator {
             if (positions.size() >= 2 && positions.get(1) != null) {
                 int nxtPos = positions.get(1);
                 finalString = getValue(finalString.substring(0, nxtPos), pos)
-                        + finalString.substring(nxtPos, finalString.length());
+                        + finalString.substring(nxtPos);
             } else {
                 finalString = getValue(
-                        finalString.substring(0, finalString.length()), pos);
+                        finalString, pos);
             }
         }
         return finalString;
